@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
     val value2 = readln().toDouble()
     println("Dame el tercer número")
     val value3 = readln().toDouble()
-    println("Dame el tercer número")
+    println("Dame el cuarto número")
     val value4 = readln().toDouble()
 
     val operation1 = value1 + value2 + value3 + value4
@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
     val operation8 = value1 + value4 < value2 * (value3 - value1)
 
     println(
-        """ |Operación 1: $value1+$value2+$value3+$value4 = $operation1 +
+        """ |Operación 1: $value1+$value2+$value3+$value4 = $operation1 
             |Operación 2: ($value1*$value2+$value3*$value4)/($value1+$value2+$value3+$value4) = $operation2
             |Operación 3: $value1*$value1+$value2*$value2-$value3/$value4 = $operation3
             |Operación 4: $value1>$value2 = $operation4
