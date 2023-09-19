@@ -15,8 +15,17 @@ fun main(args: Array<String>) {
     val operation5 = value1 - value2 <= value3 - value4
     val operation6 = (value1 > value2 || value3 < value4)
     val operation7 = (value1 < value2 && (value3 < value4 || value1 + value2 > value3 - value4))
-    val operation8 = value1+value4<value2*(value3-value1)
+    val operation8 = value1 + value4 < value2 * (value3 - value1)
 
+    println(
+        """ |Operación 1: $value1+$value2+$value3+$value4 = $operation1 +
+            |Operación 2: ($value1*$value2+$value3*$value4)/($value1+$value2+$value3+$value4) = $operation2
+            |Operación 3: $value1*$value1+$value2*$value2-$value3/$value4 = $operation3
+            |Operación 4: $value1>$value2 = $operation4
+            |Operación 5: $value1-$value2 <= $value3-$value4 = $operation5
+            |Operación 6: $value1>$value2 o $value3<$value4 = $operation6
+            |Operación 7: $value1<$value2 y $value3<$value4 o $value1+$value2>$value3-$value4 = $operation7
+            |Operación 8: $value1+$value4<$value2*($value3-$value1) = $operation8""".trimMargin()
+    )
 
-    println(operation6)
 }
