@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
         print("Introduce un número y te diré si es primo o no\n")
         var number = readln().toInt()//Leo el número obligando al usuario a introducir un int
         var prime = 0 //Uso un contador para saber si es primo
-        for (i in 1..number) {
+        for (i in 2..number) {
             if (number % i == 0) prime++
         }
         //Si el resto de la división da 0 se añade un uno al contador
